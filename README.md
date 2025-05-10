@@ -1,4 +1,4 @@
-# CyberNexus
+<!-- # CyberNexus
 
 **CyberNexus** is an advanced Python-based cybersecurity CLI tool for multi-purpose web vulnerability scanning. It features a plugin system, auto-updates from GitHub, and support for batch scans via target profiles.
 
@@ -98,19 +98,17 @@ update_all.py
 ## 🧰 Directory Structure
 
 ```bash
-cyber_nexus/
-├── core/
-│   ├── scanner.py
-│   └── profile_runner.py
-├── plugins/
-│   ├── profile_scan.py
-│   └── update_all.py
-├── utils/
-│   └── update_plugins.py
-├── profiles/
-│   └── sample.json
-├── main.py
-└── setup.py
+cybernexus/
+├── __init__.py         # Package initialization
+├── cli.py              # Command-line interface
+├── core.py             # Core functionality
+├── plugin_manager.py   # Plugin management
+├── profile_manager.py  # Profile management
+├── sample_plugins.py   # Sample plugin definitions
+├── utils.py            # Utility functions
+├── plugins/            # Plugin directory
+│   └── __init__.py     # Plugin package initialization
+└── profiles/           # Profile directory
 ```
 
 ---
@@ -124,4 +122,6 @@ Pull requests are welcome! Please follow these steps:
 
 3. Submit a PR 🚀
 
-#### Thank you!
+#### Thank you! -->
+
+FLOP
