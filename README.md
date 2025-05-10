@@ -74,7 +74,7 @@ def run(args):
 def register(subparsers):
     ...
 ```
-You can extend functionality by dropping new modules into ===plugins/===.
+You can extend functionality by dropping new modules into **plugins/**.
 
 ----
 
@@ -82,9 +82,9 @@ You can extend functionality by dropping new modules into ===plugins/===.
 
 To support remote plugin updates, your GitHub repo should contain:
 
-* A ===plugins/=== folder with ===.py=== plugin files.
+* A **plugins/** folder with **.py** plugin files.
 
-* An ===index.txt=== listing the filenames line-by-line.
+* An **index.txt** listing the filenames line-by-line.
 
 Example: 
 ```bash
