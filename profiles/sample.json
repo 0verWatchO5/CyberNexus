@@ -1,0 +1,12 @@
+{
+  "targets": [
+    {
+      "url": "http://example.com",
+      "scan": ["xss", "clickjacking"]
+    },
+    {
+      "url": "http://localhost",
+      "scan": ["lfi", "ssrf"]
+    }
+  ]
+}
