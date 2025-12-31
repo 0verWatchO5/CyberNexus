@@ -84,13 +84,30 @@ pip install -r requirements.txt
 ## 🧪 Usage
 
 ```bash
-# Run a specific scan type on a URLpython cybernexus.py scan -u https://evil.com -t xss-reflected# Run all XSS scan types on a URLpython cybernexus.py scan -u https://evil.com -t xss-all# Run all scan types on a URLpython cybernexus.py scan -u https://evil.com -a# Save scan results to a filepython cybernexus.py scan -u https://evil.com -a -o results.json# Generate an HTML reportpython cybernexus.py scan -u https://evil.com -a -o results.html -f html# Enable verbose outputpython cybernexus.py scan -u https://evil.com -t xss-reflected -v
+# Run a specific scan type on a URL 
+python3 cybernexus.py scan -u https://evil.com -t xss-reflected
+
+# Run all XSS scan types on a URL 
+python3 cybernexus.py scan -u https://evil.com -t xss-all
+
+# Run all scan types on a URL 
+python3 cybernexus.py scan -u https://evil.com -a
+
+# Save scan results to a file 
+python3 cybernexus.py scan -u https://evil.com -a -o results.json
+
+# Generate an HTML report 
+python3 cybernexus.py scan -u https://evil.com -a -o results.html -f html
+
+# Enable verbose output 
+python3 cybernexus.py scan -u https://evil.com -t xss-reflected -v
 ```
 
 ## Interactive Mode
 
 ```bash
-# Run in interactive mode for guided scanningpython cybernexus.py interactive
+# Run in interactive mode for guided scanning 
+python3 cybernexus.py interactive
 ```
 
 ---
@@ -98,7 +115,14 @@ pip install -r requirements.txt
 ## Using Profiles
 
 ```bash
-# Create a scan profilepython cybernexus.py profile create -n full_scan -t xss-all clickjacking lfi ssrf# List available profilespython cybernexus.py profile list# Run a scan profile on a URLpython cybernexus.py profile run -n full_scan -u https://evil.com
+# Create a scan profile
+python cybernexus.py profile create -n full_scan -t xss-all clickjacking lfi ssrf
+
+# List available profiles
+python cybernexus.py profile list
+# Run a scan profile on a URL
+
+python cybernexus.py profile run -n full_scan -u https://evil.com
 ```
 
 ---
@@ -106,7 +130,14 @@ pip install -r requirements.txt
 ## Managing Plugins
 
 ```bash
-# List installed pluginspython cybernexus.py plugin list# Update all pluginspython cybernexus.py plugin update# Add a custom pluginpython cybernexus.py plugin add -n my_plugin -r https://github.com/username/my-plugin
+# List installed plugins
+python cybernexus.py plugin list
+
+# Update all plugins
+python cybernexus.py plugin update
+
+# Add a custom plugin
+python cybernexus.py plugin add -n my_plugin -r https://github.com/username/my-plugin
 ```
 
 ---
@@ -116,7 +147,14 @@ pip install -r requirements.txt
 Create a new Python file in your plugin repository with this structure:
 
 ```bash
-class MyCustomScanner:    def __init__(self):        self.name = "My Custom Scanner"        self.description = "Description of what your scanner does"            def scan(self, url, verbose=False, delay=0.5):        # Your scanning logic here        results = []        # ... perform scanning ...        return results
+class MyCustomScanner:    def __init__(self):        
+self.name = "My Custom Scanner"        
+self.description = "Description of what your scanner does"            
+def scan(self, url, verbose=False, delay=0.5):        
+# Your scanning logic here        
+results = []        
+# ... perform scanning ...        
+return results
 ```
 
 ---
