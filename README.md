@@ -25,13 +25,33 @@ A modular CLI-based web security scanning tool with enhanced XSS detection capab
 
 ## 📦 Installation
 
-Clone the repo and install dependencies:
+Clone the repo and then follow the steps for your OS.
 
+### Windows (PowerShell)
+```powershell
+git clone https://github.com/0verWatchO5/CyberNexus
+cd CyberNexus
+python -m venv .venv
+.\.venv\Scripts\Activate
+python -m pip install -r requirements.txt
+```
+
+### Linux
 ```bash
 git clone https://github.com/0verWatchO5/CyberNexus
 cd CyberNexus
-python3 -m venv NEX
-pip3 install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### macOS
+```bash
+git clone https://github.com/0verWatchO5/CyberNexus
+cd CyberNexus
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ---

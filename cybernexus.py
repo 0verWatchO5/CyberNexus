@@ -8,6 +8,7 @@ import sys
 import os
 import json
 import time
+import rich
 from rich.console import Console
 from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TimeElapsedColumn
